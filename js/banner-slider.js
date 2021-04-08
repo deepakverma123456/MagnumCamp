@@ -15,15 +15,19 @@ $(document).ready(function(){
 
 
 //Product slider
-$('#exampleSlider1').multislider({interval: 2500});
+$('#exampleSlider1').multislider({
+    slideAll: true,
+    interval: false,
+    continuous: false});
 $('#exampleSlider2').multislider({
     slideAll: true,
     interval: false,
     continuous: false
 });
 $('#exampleSlider3').multislider({
-    autoPlay: "off",
-    interval: 2500
+    slideAll: true,
+    interval: false,
+    continuous: false
 });
 
 

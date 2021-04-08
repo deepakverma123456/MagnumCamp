@@ -1,5 +1,7 @@
 ﻿var AWSURL = 'https://s3-ap-southeast-1.amazonaws.com/www.cartwire.co/widget/cw';
 var elms = $(".cw_container");
+//$(document.body).on('touchmove', onScroll); // for mobile
+//$(window).on('scroll', onScroll); 
 $(document).ready(function () {
 	$(".cw_container").hide();
 	$(".cw_container").css("opacity", 0);
@@ -7,13 +9,23 @@ $(document).ready(function () {
 	var n = elms.length;
 	var win = $(window);
 	var i = 0;
-	win.scroll(function () {		
-		if ($(document).height() - win.height() <= win.scrollTop()) {
-				loadsWidget(n,i);
-			i++;
-			
-		}
-	});
+	
+		$(document.body).on('touchmove',(function () {
+			if ($(document).height() - win.height() <= win.scrollTop()) {
+				loadsWidget(n, i);
+				i++;
+
+			}
+		})
+	); $(window).on('scroll',(function () {
+			if ($(document).height() - win.height() <= win.scrollTop()) {
+				loadsWidget(n, i);
+				i++;
+
+			}
+		})
+			);
+	
 });
 
 function cwWidgetLoader() {
