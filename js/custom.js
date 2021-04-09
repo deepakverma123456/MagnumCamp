@@ -10,21 +10,31 @@ $(document).ready(function () {
 	var win = $(window);
 	var i = 0;
 	
-		$(document.body).on('touchmove',(function () {
-			if ($(document).height() - win.height() <= win.scrollTop()) {
-				loadsWidget(n, i);
-				i++;
+	$(document.body).touchmove(function () {
 
-			}
-		})
-	); $(window).on('scroll',(function () {
-			if ($(document).height() - win.height() <= win.scrollTop()) {
-				loadsWidget(n, i);
-				i++;
+		if ($(document).height() - win.height() <= win.scrollTop()) {
+			loadsWidget(n, i);
+			i++;
 
-			}
-		})
-			);
+		}
+	});
+	
+	$(window).scroll(function () {
+		if ($(window).scrollTop() == $(document).height() - $(window).height()) {
+			loadsWidget(n, i);
+			i++;
+		}
+
+	});
+
+	//$(window).on('scroll', (function () {
+	//		if ($(document).height() - win.height() <= win.scrollTop()) {
+	//			loadsWidget(n, i);
+	//			i++;
+
+	//		}
+	//	})
+	//		);
 	
 });
 
