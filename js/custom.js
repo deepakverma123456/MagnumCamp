@@ -10,14 +10,14 @@ $(document).ready(function () {
 	var win = $(window);
 	var i = 0;
 	
-	$(document.body).touchmove(function () {
+	//$(document.body).touchmove(function () {
 
-		if ($(document).height() - win.height() <= win.scrollTop()) {
-			loadsWidget(n, i);
-			i++;
+	//	if ($(document).height() - win.height() <= win.scrollTop()) {
+	//		loadsWidget(n, i);
+	//		i++;
 
-		}
-	});
+	//	}
+	//});
 	
 	$(window).scroll(function () {
 		if ($(window).scrollTop() == $(document).height() - $(window).height()) {
