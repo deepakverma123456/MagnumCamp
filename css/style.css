@@ -101,9 +101,6 @@ box-sizing: content-box;border-radius: 3px;z-index: 4;}
 .cw_main_container .slider, .cw_main_container .slider > div {height: 300px;}
 .cw_main_container .exampleSlider .MS-content .item {width: 50%;}
 .cw_main_container .slider, .cw_main_container .slider > div {height: 200px;}
-.cw_main_container .logo_left{text-align: center;}
-.cw_main_container .logo_center{text-align: center;}
-.cw_main_container .logo_right{text-align: center;}
 }
 @media (max-width:575px){
 .cw_main_container .cw_container .cw_product_list li{width: 100%;}
