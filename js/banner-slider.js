@@ -16,18 +16,19 @@ $(document).ready(function(){
 
 //Product slider
 $('#exampleSlider1').multislider({
-    slideAll: true,
-    interval: false,
-    continuous: false});
+    //slideAll: true,
+    //interval: false,
+    //continuous: false
+});
 $('#exampleSlider2').multislider({
-    slideAll: true,
-    interval: false,
-    continuous: false
+    //slideAll: true,
+    //interval: false,
+    //continuous: false
 });
 $('#exampleSlider3').multislider({
-    slideAll: true,
-    interval: false,
-    continuous: false
+    //slideAll: true,
+    //interval: false,
+    //continuous: false
 });
 
 
