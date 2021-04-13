@@ -1,4 +1,4 @@
-body{font-family: Arial, sans-serif; color: #000;background: #fff; font-size: 14px; margin: 0px; padding: 0px;}
+body{font-family: Arial, sans-serif; color: #000;background: #fff; font-size: 14px; margin: 0px; padding: 0px;min-height:101vh}
 a{color: #000000;text-decoration: none;outline: none; -webkit-transition: all 0.3s ease-in;-moz-transition: all 0.3s ease-in;transition: all 0.3s ease-in;}
 a:hover {color: #c79652;text-decoration: none;outline: none; -webkit-transition: all 0.3s ease-in;-moz-transition: all 0.3s ease-in;transition: all 0.3s ease-in;}
 
