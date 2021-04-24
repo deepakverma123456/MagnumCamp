@@ -3,6 +3,10 @@ var elms = $(".cw_container");
 //$(document.body).on('touchmove', onScroll); // for mobile
 //$(window).on('scroll', onScroll); 
 $(document).ready(function () {
+	document.getElementsByClassName("cw_btn_buynow").onclick = function() {  
+alert("test")
+}; 
+
 		$(".cw_container").hide();
 	$(".cw_container").css("opacity", 0);
 	$(".cw_container").css("transition", "opacity 2s");
@@ -74,6 +78,3 @@ function loadsWidget(n, i) {
 //loadsWidget();
 
 
-document.getElementByClass("right").onclick = function() {  
-alert("test")
-}; 
