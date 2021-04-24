@@ -1,39 +1,39 @@
 ﻿//var AWSURL = 'https://s3-ap-southeast-1.amazonaws.com/www.cartwire.co/widget/cw';
 
-var elms = $(".cw_container");
-//$(document.body).on('touchmove', onScroll); // for mobile
-//$(window).on('scroll', onScroll); 
-$(document).ready(function () {
+var elms = $CW(".cw_container");
+//$CW(document.body).on('touchmove', onScroll); // for mobile
+//$CW(window).on('scroll', onScroll); 
+$CW(document).ready(function () {
 	document.getElementsByClassName("cw_btn_buynow").onclick = function() {  
 alert("test")
 }; 
 
-		$(".cw_container").hide();
-	$(".cw_container").css("opacity", 0);
-	$(".cw_container").css("transition", "opacity 2s");
+		$CW(".cw_container").hide();
+	$CW(".cw_container").css("opacity", 0);
+	$CW(".cw_container").css("transition", "opacity 2s");
 	var n = elms.length;
-	var win = $(window);
+	var win = $CW(window);
 	var i = 0;
 	
-	//$(document.body).touchmove(function () {
+	//$CW(document.body).touchmove(function () {
 
-	//	if ($(document).height() - win.height() <= win.scrollTop()) {
+	//	if ($CW(document).height() - win.height() <= win.scrollTop()) {
 	//		loadsWidget(n, i);
 	//		i++;
 
 	//	}
 	//});
 	
-	$(window).scroll(function () {
-		if ($(window).scrollTop() == $(document).height() - $(window).height()) {
+	$CW(window).scroll(function () {
+		if ($CW(window).scrollTop() == $CW(document).height() - $CW(window).height()) {
 			loadsWidget(n, i);
 			i++;
 		}
 
 	});
 
-	//$(window).on('scroll', (function () {
-	//		if ($(document).height() - win.height() <= win.scrollTop()) {
+	//$CW(window).on('scroll', (function () {
+	//		if ($CW(document).height() - win.height() <= win.scrollTop()) {
 	//			loadsWidget(n, i);
 	//			i++;
 
@@ -58,7 +58,7 @@ function cwWidgetLoader() {
 function loadsWidget(n, i) {	
 	cwWidgetLoader();
 	if (n <= i) {
-		$("#siteLoader_cw").hide();
+		$CW("#siteLoader_cw").hide();
 	}
 	
 	setTimeout(function () {	
@@ -72,7 +72,7 @@ function loadsWidget(n, i) {
 			}, 0);
 		
 			clearTimeout(loadsWidget);
-			$("#siteLoader_cw").hide();
+			$CW("#siteLoader_cw").hide();
 		}		
 		}, 1000);	
 }
