@@ -75,5 +75,5 @@ function loadsWidget(n, i) {
 
 
 document.getElementByClass("right").onclick = function() {  
-;alert("test")
+alert("test")
 }; 
