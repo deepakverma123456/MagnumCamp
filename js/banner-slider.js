@@ -1,32 +1,32 @@
 
         //Go to top
-$(document).ready(function(){ 
-    $(window).scroll(function(){ 
-        if ($(this).scrollTop() > 100) { 
-            $('#goto_top').fadeIn(); 
+ $CW(document).ready(function(){ 
+     $CW(window).scroll(function(){ 
+        if ( $CW(this).scrollTop() > 100) { 
+             $CW('#goto_top').fadeIn(); 
         } else { 
-            $('#goto_top').fadeOut(); 
+             $CW('#goto_top').fadeOut(); 
         } 
     }); 
-    $('#goto_top').click(function(){ 
-        $("html, body").animate({ scrollTop: 0 }, 600);
+     $CW('#goto_top').click(function(){ 
+         $CW("html, body").animate({ scrollTop: 0 }, 600);
         return false; 
     }); 
 });
 
 
 //Product slider
-$('#exampleSlider1').multislider({
+ $CW('#exampleSlider1').multislider({
     //slideAll: true,
     //interval: false,
     //continuous: false
 });
-$('#exampleSlider2').multislider({
+ $CW('#exampleSlider2').multislider({
     //slideAll: true,
     //interval: false,
     //continuous: false
 });
-$('#exampleSlider3').multislider({
+ $CW('#exampleSlider3').multislider({
     //slideAll: true,
     //interval: false,
     //continuous: false
