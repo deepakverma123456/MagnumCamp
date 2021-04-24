@@ -1,4 +1,7 @@
-//Go to top
+if ((typeof $) == "undefined") {
+            $ = jQuery.noConflict(true);
+        }
+        //Go to top
 $(document).ready(function(){ 
     $(window).scroll(function(){ 
         if ($(this).scrollTop() > 100) { 

@@ -1,4 +1,7 @@
 ﻿//var AWSURL = 'https://s3-ap-southeast-1.amazonaws.com/www.cartwire.co/widget/cw';
+if ((typeof $) == "undefined") {
+            $ = jQuery.noConflict(true);
+        }
 var elms = $(".cw_container");
 //$(document.body).on('touchmove', onScroll); // for mobile
 //$(window).on('scroll', onScroll); 
