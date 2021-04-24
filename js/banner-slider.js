@@ -161,8 +161,8 @@
 //////////////////////////////////////////////
 // Activate each slider - change options
 //////////////////////////////////////////////
-$(document).ready(function () {
-    $("#slider1").sliderResponsive({
+$CW(document).ready(function () {
+    $CW("#slider1").sliderResponsive({
         // Using default everything
         // slidePause: 5000,
         // fadeSpeed: 800,
@@ -173,22 +173,22 @@ $(document).ready(function () {
         // titleBarTop: "off"
     });
 
-    $("#slider2").sliderResponsive({
+    $CW("#slider2").sliderResponsive({
         fadeSpeed: 300,
         autoPlay: "off",
         showArrows: "on",
         hideDots: "on"
     });
 
-    $("#slider3").sliderResponsive({
+    $CW("#slider3").sliderResponsive({
         hoverZoom: "off",
         hideDots: "on"
     });
-    $("#slider5").sliderResponsive({
+    $CW("#slider5").sliderResponsive({
         hoverZoom: "off",
         hideDots: "on"
     });
-    $("#slider4").sliderResponsive({
+    $CW("#slider4").sliderResponsive({
         autoPlay: "off",
         hoverZoom: "off",
         hideDots: "on"
