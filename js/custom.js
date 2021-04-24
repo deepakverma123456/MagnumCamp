@@ -72,3 +72,8 @@ function loadsWidget(n, i) {
 		}, 1000);	
 }
 //loadsWidget();
+
+
+ $(".right").onclick(function(){
+    console.log("left click");
+});
