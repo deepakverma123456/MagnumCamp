@@ -156,7 +156,7 @@
 
         return $slider;
     };
-})(jQuery);
+})($CW);
 
 //////////////////////////////////////////////
 // Activate each slider - change options
