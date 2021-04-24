@@ -1,33 +1,19 @@
 
         //Go to top
-        
-$(document).ready(function(){ 
-    $(window).scroll(function(){ 
-        if ($(this).scrollTop() > 100) { 
-            $('#goto_top').fadeIn(); 
-        } else { 
-            $('#goto_top').fadeOut(); 
-        } 
-    }); 
-    $('#goto_top').click(function(){ 
-        $("html, body").animate({ scrollTop: 0 }, 600);
-        return false; 
-    }); 
-});
 
 
 //Product slider
-$('#exampleSlider1').multislider({
+$CW('#exampleSlider1').multislider({
     //slideAll: true,
     //interval: false,
     //continuous: false
 });
-$('#exampleSlider2').multislider({
+$CW('#exampleSlider2').multislider({
     //slideAll: true,
     //interval: false,
     //continuous: false
 });
-$('#exampleSlider3').multislider({
+$CW('#exampleSlider3').multislider({
     //slideAll: true,
     //interval: false,
     //continuous: false
@@ -162,8 +148,19 @@ $('#exampleSlider3').multislider({
 //////////////////////////////////////////////
 // Activate each slider - change options
 //////////////////////////////////////////////
-$(document).ready(function () {
-    $("#slider1").sliderResponsive({
+$CW(document).ready(function () {
+     $CW(window).scroll(function(){ 
+        if ($CW(this).scrollTop() > 100) { 
+            $CW('#goto_top').fadeIn(); 
+        } else { 
+            $CW('#goto_top').fadeOut(); 
+        } 
+    }); 
+    $CW('#goto_top').click(function(){ 
+        $CW("html, body").animate({ scrollTop: 0 }, 600);
+        return false; 
+    }); 
+    $CW("#slider1").sliderResponsive({
         // Using default everything
         // slidePause: 5000,
         // fadeSpeed: 800,
@@ -174,22 +171,22 @@ $(document).ready(function () {
         // titleBarTop: "off"
     });
 
-    $("#slider2").sliderResponsive({
+    $CW("#slider2").sliderResponsive({
         fadeSpeed: 300,
         autoPlay: "off",
         showArrows: "on",
         hideDots: "on"
     });
 
-    $("#slider3").sliderResponsive({
+    $CW("#slider3").sliderResponsive({
         hoverZoom: "off",
         hideDots: "on"
     });
-    $("#slider5").sliderResponsive({
+    $CW("#slider5").sliderResponsive({
         hoverZoom: "off",
         hideDots: "on"
     });
-    $("#slider4").sliderResponsive({
+    $CW("#slider4").sliderResponsive({
         autoPlay: "off",
         hoverZoom: "off",
         hideDots: "on"
