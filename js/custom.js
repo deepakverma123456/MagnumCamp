@@ -101,6 +101,6 @@ function loadsWidget(n, i) {
 			clearTimeout(loadsWidget);
 			$CW("#siteLoader_cw").hide();
 		}
-	}, 1000);
+	}, 2000);
 }
 //loadsWidget();
