@@ -1,11 +1,11 @@
 ﻿//var AWSURL = 'https://s3-ap-southeast-1.amazonaws.com/www.cartwire.co/widget/cw';
-var elms = $(".cw_container");
+var elms =$CW(".cw_container");
 //$(document.body).on('touchmove', onScroll); // for mobile
 //$(window).on('scroll', onScroll); 
 var isMobile = /iPhone|iPad|iPod|Android/i.test(navigator.userAgent);
 
 
-$(document).ready(function () {
+$CW(document).ready(function () {
 	//$(".cw_container").hide();
 	//$(".cw_container").css("opacity", 0);
 	//$(".cw_container").css("transition", "opacity 2s");
@@ -18,17 +18,17 @@ $(document).ready(function () {
 	} else {
 	
 	}
-	$(".cw_container").hide();
-	$(".cw_container").css("opacity", 0);
-	$(".cw_container").css("transition", "opacity 2s");
+	$CW(".cw_container").hide();
+	$CW(".cw_container").css("opacity", 0);
+	$CW(".cw_container").css("transition", "opacity 2s");
 	var n = elms.length;
-	var win = $(window);
+	var win = $CW(window);
 	var i = 0;
 
 	if (window.matchMedia("(max-width: 767px)").matches) {
 		// The viewport is less than 768 pixels wide
-		$(".exampleSlider .item:first").addClass('active');
-		$(".cw_product_list li").addClass('active');
+		$CW(".exampleSlider .item:first").addClass('active');
+		$CW(".cw_product_list li").addClass('active');
 	} else {
 		// The viewport is at least 768 pixels wide
 		//alert("This is a tablet or desktop.");
@@ -42,12 +42,12 @@ $(document).ready(function () {
 
 	//	}
 	//});
-	$(".cw_banner").on('swipeleft', function () {
+	$CW(".cw_banner").on('swipeleft', function () {
 		alert(123456);
 	});
 
-	$(window).scroll(function () {
-		if ($(window).scrollTop() <= $(document).height() - window.visualViewport.height) {
+	$CW(window).scroll(function () {
+		if ($CW(window).scrollTop() <= $CW(document).height() - window.visualViewport.height) {
 			loadsWidget(n, i);
 			i++;
 		}
@@ -63,9 +63,9 @@ $(document).ready(function () {
 	//	})
 	//		);
 
-	$(".cw_btn_load").click(function () {
-		$(this).parents(".cw_container").children(".cw_product_list").children('li').removeClass("cw_hide");
-		$(this).hide();
+	$CW(".cw_btn_load").click(function () {
+		$CW(this).parents(".cw_container").children(".cw_product_list").children('li').removeClass("cw_hide");
+		$CW(this).hide();
 	});
 
 });
@@ -85,7 +85,7 @@ function cwWidgetLoader() {
 function loadsWidget(n, i) {
 	cwWidgetLoader();
 	if (n <= i) {
-		$("#siteLoader_cw").hide();
+		$CW("#siteLoader_cw").hide();
 	}
 
 	setTimeout(function () {
@@ -99,7 +99,7 @@ function loadsWidget(n, i) {
 			}, 0);
 
 			clearTimeout(loadsWidget);
-			$("#siteLoader_cw").hide();
+			$CW("#siteLoader_cw").hide();
 		}
 	}, 1000);
 }
