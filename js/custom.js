@@ -61,7 +61,7 @@ $CW(document).ready(function () {
 	// });
 	$CW(window).scroll(function() {
 		if (scroll_enabled) {
-		if ($CW(window).scrollTop() >= (($CW(document).height() - $CW(window).height()) - $CW(elms[i]).innerHeight())) {
+		if ($CW(window).scrollTop() >= (($CW(document).height() - window.visualViewport.height) - $CW(elms[i]).innerHeight())) {
 		  console.log('div reached');
 		  scroll_enabled = false;  
 		  loadsWidget(n, i);
