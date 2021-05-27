@@ -1,1 +1,2 @@
-Access-Control-Allow-Origin: https://cwqa.srmtechsol.com/MagnumCamp/myfile.json
+/*
+  Access-Control-Allow-Origin: *
